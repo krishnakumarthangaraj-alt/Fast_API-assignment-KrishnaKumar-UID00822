@@ -1,0 +1,7 @@
+fastapi
+pydantic
+tortoise-orm
+aerich
+pytest
+PyJWT
+httpx
