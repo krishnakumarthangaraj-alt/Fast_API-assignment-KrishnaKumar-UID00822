@@ -5,3 +5,4 @@ aerich
 pytest
 PyJWT
 httpx
+asyncpg
