@@ -1,8 +1,17 @@
-import uuid
 from tortoise.models import Model
 from tortoise import fields
+
 class BaseModel(Model):
     id =  fields.UUIDField(
-        pk = True,
-        default = uuid.uuid4
+        pk = True
     )
+    created_at =  fields.DatetimeField(
+        auto_now_add = True
+    )
+    updated_at = fields.DatetimeField(
+        auto_now = True
+    )
+    class Meta:
+        abstract = True
+
+
